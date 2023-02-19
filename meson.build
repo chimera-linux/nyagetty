@@ -13,6 +13,10 @@ if cc.has_argument('-Wpedantic')
     add_project_arguments('-Wno-pedantic', language: 'c')
 endif
 
+add_project_arguments(
+    '-DPACKAGE_VERSION="' + meson.project_version() + '"', language: 'c'
+)
+
 add_project_arguments('-D_PATH_RUNSTATEDIR="/run"', language: 'c')
 add_project_arguments(
     '-D_PATH_SYSCONFSTATICDIR="' + join_paths(

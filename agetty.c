@@ -58,7 +58,7 @@
 #include <sys/utsname.h>
 #include <sys/ttydefaults.h>
 
-#define PACKAGE_STRING "nyagetty"
+#define PACKAGE_STRING "nyagetty " PACKAGE_VERSION
 
 /* these are supported in common envs */
 #define HAVE_WIDECHAR 1
